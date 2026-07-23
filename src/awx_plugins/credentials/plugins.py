@@ -745,14 +745,13 @@ controller = ManagedCredentialType(
                 'id': 'verify_ssl',
                 'label': gettext_noop('Verify SSL'),
                 'type': 'boolean',
-                'secret': False,
             },
             {
                 'id': 'request_timeout',
-                'label': gettext_noop('Verify SSL'),
+                'label': gettext_noop('Request Timeout'),
                 'type': 'string',
                 'secret': False,
-                'default': 'galaxy',
+                'default': '10',
                 'help_text': gettext_noop(
                     'Specify the timeout Ansible should use in requests to '
                     'the host. Defaults to 10s',
